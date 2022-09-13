@@ -38,7 +38,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Project Specifications
 
-[Time Tracker Specifications](https://docs.google.com/document/d/1-4vN-JAWkxuEgbfgH7grE6NJB9olHplzaCyPqajYEyM/)
+[Link to Specifications](https://docs.google.com/document/d/1-4vN-JAWkxuEgbfgH7grE6NJB9olHplzaCyPqajYEyM/)
 
 ## Contributors
 
