@@ -24,7 +24,10 @@ export default function App() {
     authUser ? getUserDataRef(authUser.uid) : undefined
   )
 
-  if (user && user.email?.endsWith('@brown.edu')) {
+  if (
+    user &&
+    (user.email?.endsWith('@brown.edu') || user.email?.endsWith('@gmail.com'))
+  ) {
     return (
       <UserContext.Provider value={user}>
         <div className="bg-blue-light w-screen h-screen p-4">
@@ -49,7 +52,8 @@ export default function App() {
     )
   } else if (user) {
     // user didn't have an email that ends with '@brown.edu'
-    const message = 'Error: Please sign into your Brown Gmail Account!'
+    // case does not occur
+    const message = 'Error: Please sign in using a Gmail Account!'
     return <SignInPage message={message} />
   } else if (authLoading || userLoading) {
     return (
