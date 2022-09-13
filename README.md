@@ -1,11 +1,54 @@
-# Installation
 
-Note: Need to run npm install --legacy-peer-deps to install all the packages correctly.
+# Time Tracker App
 
-Instructions for running:
+Web app that lets Brown University students track, visualize, and compare how much time they spend on specific classes.
 
-Cd into the frontend folder, run npm install --legacy-peer-deps, and run npm start to start the project on localhost.
-Once you navigate to http://localhost:3000/ after starting the project, you have to log in with a Brown email account via Google. Make sure your browser isn't synced to a non-Brown account, there is a bug with cookies that will not let you log in even after using a Brown account on such a browser.
-Once you log in, feel free to explore the app!
+## Tech Stack
 
-[Link to specification doc](https://docs.google.com/document/d/1-4vN-JAWkxuEgbfgH7grE6NJB9olHplzaCyPqajYEyM/)
+- Firebase
+- Next.js
+- React
+- Tailwind CSS
+- Selenium and Java
+
+# Installation (frontend)
+
+Note: Make sure you have [**Node.js**](https://nodejs.org/en/) installed.
+
+First, clone the repository:
+
+```bash
+git clone https://github.com/melvinhe/time-tracker.git
+```
+
+Then, install the frontend dependencies:
+
+```bash
+cd time-tracker/frontend
+npm install --legacy-peer-deps
+```
+
+Finally, run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Project Specifications
+
+[Time Tracker Specifications](https://docs.google.com/document/d/1-4vN-JAWkxuEgbfgH7grE6NJB9olHplzaCyPqajYEyM/)
+
+## Contributors
+
+Time Tracker started as a term project for a [software engineering class](http://cs.brown.edu/courses/csci0320/)
+at Brown University contributed to by
+[Stewart Morris](https://github.com/stew2003),
+[Nicky Yarnall](https://github.com/nickyy96),
+[Sid Boppana](https://github.com/AskSid),
+[Tim DeSimone](https://github.com/TimD123),
+[Mitchell Salomon](https://github.com/Mitchman215),
+and [Melvin He](https://github.com/melvinhe).
+
+Presently, development has been continued primarily by [Melvin He](https://github.com/melvinhe). Any feedback or pull requests are welcomed.
