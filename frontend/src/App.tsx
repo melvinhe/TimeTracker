@@ -24,10 +24,31 @@ export default function App() {
     authUser ? getUserDataRef(authUser.uid) : undefined
   )
 
-  if (
-    user &&
-    (user.email?.endsWith('@brown.edu') || user.email?.endsWith('@gmail.com'))
-  ) {
+  if (user && user.email?.endsWith('@brown.edu')) {
+    return (
+      <UserContext.Provider value={user}>
+        <div className="bg-blue-light w-screen h-screen p-4">
+          <header>
+            <Nav />
+          </header>
+          <main className="mt-8">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="timetracker" element={<Timetrack />} />
+              <Route path="auth" element={<Navigate replace to="/" />} />
+              <Route path="records" element={<UserRecordsRoute />} />
+              <Route path="departments" element={<DptCompRoute />} />
+              <Route path="classes" element={<ClassesCompRoute />} />
+              <Route path="user" element={<UserCompRoute />} />
+              <Route path="class/:classId" element={<ClassRecords />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+        </div>
+      </UserContext.Provider>
+    )
+  } else if (user && user.email?.endsWith('@gmail.com')) {
+    // user didn't have an email that ends with '@brown.edu'
     return (
       <UserContext.Provider value={user}>
         <div className="bg-blue-light w-screen h-screen p-4">
@@ -51,9 +72,9 @@ export default function App() {
       </UserContext.Provider>
     )
   } else if (user) {
-    // user didn't have an email that ends with '@brown.edu'
-    // case does not occur
-    const message = 'Error: Please sign in using a Gmail Account!'
+    // user didn't have an email that ends with '@brown.edu' or '@gmail.com'
+    const message =
+      'Please sign into a Gmail account that ends with @brown.edu or @gmail.com! Make sure your sync is off for proper access.'
     return <SignInPage message={message} />
   } else if (authLoading || userLoading) {
     return (

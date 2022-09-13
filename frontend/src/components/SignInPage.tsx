@@ -10,6 +10,9 @@ function SignInPage({ message }: SignInPageProp) {
     <div className="bg-blue-light w-screen h-screen p-4">
       {message === undefined && (
         <header>
+          <p>Sign into your Brown gmail account for unrestricted access.</p>
+          <p>Or for a restricted viewing access of the TimeTracker app, </p>
+          <p>please use personal '@gmail.com' email for sign in. </p>
           <p>{message}</p>
         </header>
       )}
