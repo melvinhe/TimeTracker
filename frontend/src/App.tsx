@@ -72,9 +72,8 @@ export default function App() {
       </UserContext.Provider>
     )
   } else if (user) {
-    // user didn't have an email that ends with '@brown.edu' or '@gmail.com'
     const message =
-      'Please sign into a Gmail account that ends with @brown.edu or @gmail.com! Make sure your sync is off for proper access.'
+      'Please sign into an account that ends with @brown.edu or @gmail.com! Make sure your sync is off for proper access.'
     return <SignInPage message={message} />
   } else if (authLoading || userLoading) {
     return (

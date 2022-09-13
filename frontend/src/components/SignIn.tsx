@@ -31,11 +31,14 @@ function SignIn() {
         <div className="bg-white rounded-full w-12 h-12">
           <img src={logo} />
         </div>
-        <div className="bg-white rounded-full w-12 h-20">
+        <div className="bg-white rounded-full w-20 h-20">
           <img src={clock} />
         </div>
         <h1 className="text-black font-bold h-12">
-          Please sign in below using your Brown Gmail account
+          Please sign into your Brown gmail account for personalized access.
+        </h1>
+        <h1 className="text-black font-bold h-20">
+          Or, use personal '@gmail.com' email for viewing restricted access.
         </h1>
         <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={auth} />
       </div>
