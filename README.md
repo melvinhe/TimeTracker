@@ -50,5 +50,3 @@ at Brown University contributed to by
 [Tim DeSimone](https://github.com/TimD123),
 [Mitchell Salomon](https://github.com/Mitchman215),
 and [Melvin He](https://github.com/melvinhe).
-
-Presently, development has been continued primarily by [Melvin He](https://github.com/melvinhe). Any feedback or pull requests are welcomed.
