@@ -18,13 +18,13 @@ Note: Make sure you have [**Node.js**](https://nodejs.org/en/) installed.
 First, clone the repository:
 
 ```bash
-git clone https://github.com/melvinhe/time-tracker.git
+git clone https://github.com/melvinhe/TimeTracker.git
 ```
 
 Then, install the frontend dependencies:
 
 ```bash
-cd time-tracker/frontend
+cd TimeTracker/frontend
 npm install --legacy-peer-deps
 ```
 
