@@ -35,10 +35,7 @@ function SignIn() {
           <img src={clock} />
         </div>
         <h1 className="text-black font-bold h-12">
-          Please sign into your Brown gmail account for personalized access.
-        </h1>
-        <h1 className="text-black font-bold h-20">
-          Or, use personal '@gmail.com' email for viewing restricted access.
+          Please sign into your Brown gmail account below.
         </h1>
         <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={auth} />
       </div>

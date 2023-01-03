@@ -5,5 +5,6 @@
   "eslint.workingDirectories": ["frontend", "functions"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "java.compile.nullAnalysis.mode": "automatic"
 }
